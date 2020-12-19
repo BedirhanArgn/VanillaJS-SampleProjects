@@ -3,6 +3,7 @@ HTML-CSS-JS ile oluşturulmuş örnek çalışmalar
 
 ## Expanding Cards 
 ![Cards](https://i.ibb.co/CKG412z/1.png)
+
 Bir display flex alıştırmasıdır.
 
 ## Progress Steps
