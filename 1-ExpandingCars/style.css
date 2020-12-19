@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items:center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    align-items:center;
+    justify-content: center;
+}
+
+.resim{
+    height: 80vh;
+    border-radius: 50px;
+    margin: 10px;
+    flex: 0.2;
+    overflow: hidden;
+    position: relative; 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    cursor: pointer;
+    transition: flex 0.7s ease-in;
+}
+
+.resim h3 {
+    color:white;
+    font-size: 30px;
+    position: absolute;
+    bottom:  20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.active{
+opacity: 1;
+    flex:5;
+}
+.resim.active h3{
+    opacity: 1;
+}
