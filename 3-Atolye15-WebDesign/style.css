@@ -16,16 +16,6 @@ body{
     line-height:1.5556;
 }
 
-
-
-@media only screen and (min-width:62rem){
-    .l-header {
-    position:fixed;
-    transform:translate3d(0,2.1875rem,0);
-    transition:transform .1s,-webkit-transform .1s;
-    }
-}
-
 .l-header{
 z-index: 3;
 top: 0;
@@ -55,8 +45,8 @@ width:100%;
     transform: translateY(2.5px);
 }
 .l-header__logo {
-position:relative;
-z-index:3;
+    position:relative;
+    z-index:3;
 }
 
 .hiring-label {
@@ -90,6 +80,26 @@ z-index:3;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
 }
+
+
+.c-jumbotron__container::before {
+    position:absolute;
+    background-image:url("images/bg1.jpg");
+    z-index: -1;
+    top: 50%;
+    left: 33.75rem;
+    display: block;
+    width: 55.375rem;
+    height: 40.375rem;
+    background-position: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    content: "";
+}
+.c-jumbotron__container{
+    z-index:0;
+}
 .container {
     padding-right: .9375rem;
     padding-left: .9375rem;
@@ -97,24 +107,22 @@ z-index:3;
     margin-left: auto;
 }
 .c-nav {
-
-position: relative;
-z-index: 4;
-text-align: center;
-font-size: .8125rem;
-font-weight: 500;
-letter-spacing: 2px;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    font-size: .8125rem;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
-
 
 /*
  * Navbar component
  */
 .nav-link {
     font-size: .8125rem;
-    font-family:'Circular Std Book';
+    font-family:'Circular Std Book',sans-serif;
     letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: 600;
     color:#afb6be;
     text-decoration: none;
     transition:color .5s;
@@ -124,47 +132,129 @@ letter-spacing: 2px;
     color: #fe2d5b;
 }
 
+/*İçerik CSS*/
+
+.c-jumbotron{
+    overflow:hidden;
+}
+
+.row{
+    height: 100%;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+}
+h1 {
+    font-size: 3.4444444444em;
+    color:#424242;
+    line-height:1.1;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+}
+.u-color-primary {
+    color: #fe2d5b;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.u-block{
+    display: block;
+}
+
+
+/*button*/
+
+
+
+/*992px*/
 @media(min-width:62rem) {
     .nav-link{
         display:inline-block;
     }
 }
 
-@media (min-width: 48rem) {
-.l-header_content {
-    height: 5rem;
-}
-}
-
-@media(min-width:48rem) {
-.navigation-container{
-    margin-left: auto;
-}
-}
-
-@media(min-width:62rem) {
-    .container {
-    max-width:58.75rem;    
+/*992px*/
+@media (min-width:62rem){
+    .l-header {
+    transform:translate3d(0,2.1875rem,0);
+    transition:transform .1s,-webkit-transform .1s;
     }
 }
-/*
-* Birinci dısında digerlerini margin-left yap
-*/
-@media (min-width: 62rem){
-.nav-link:not(:nth-child(1)) {  
-    margin-left: 1.75rem;
+
+
+@media (max-width:48rem) {
+    .navigation-container{
+        display: none;
+    }
+
+}
+
+/*768px*/
+@media(min-width:48rem) {
+    .container {
+        max-width:50.75rem;   
+    }
+    
+    .navigation-container{
+        margin-left: 2rem;
+    }
+    .nav-link:not(:nth-child(1)) {  
+        margin-left: 1.25rem;
+    }
+    .l-header{
+        transform: translate3d(0,2.1875rem,0);
+    }
+    .c-jumbotron__container{
+        height:100vmin;
+    }
+}
+
+
+@media (min-width:34rem) {
+      .l-header{
+        transform: translate3d(0,2.1875rem,0);
+    }
+    .navigation{
+        display:inline;
+    }
+}
+
+
+/*992px*/
+@media(min-width:62rem) {
+.container {
+    max-width:60.75rem;   
+    
+    }
+    .navigation-container{
+        margin-left: auto;
+    }
+    .nav-link:not(:nth-child(1)) {  
+        margin-left: 1.75rem;
+    }
+}
+
+@media (max-width: 61.9375rem) {
+.l-header:before, .hiring-label {
+    display: none;
 }
 }
-@media (max-width: 61.9375rem) and (min-width: 48rem) {
-.l-header {
-    position: absolute;
-    top: 20px;
-}
-}
+
 
 @media (min-width: 75rem) {
 .container {
     max-width: 71.25rem;
+}
+.col-7 {
+    max-width: 58.3333333333%;
+    flex: 0 0 58.3333333333%;
 }
 }
 
