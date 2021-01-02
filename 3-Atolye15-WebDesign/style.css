@@ -87,7 +87,7 @@ width:100%;
     background-image:url("images/bg1.jpg");
     z-index: -1;
     top: 50%;
-    left: 33.75rem;
+    left: 60rem;
     display: block;
     width: 55.375rem;
     height: 40.375rem;
@@ -141,15 +141,18 @@ width:100%;
 .row{
     height: 100%;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 .col {
     position: relative;
     width: 100%;
+    margin-top: 3rem;
     min-height: 1px;
     padding-right: .9375rem;
     padding-left: .9375rem;
+    display:flex;
+    align-items: center;
 }
 h1 {
     font-size: 3.4444444444em;
@@ -170,9 +173,48 @@ h1 {
 
 
 /*button*/
+.c-button{
+transition: background-color .1s;
+position: relative;
+display: inline-block;
+padding: 1.125rem 1.875rem;
+border-width: 0;
+cursor: pointer;
+padding:18px 30px ;
+min-width: 191px;
+font-family: 'Circular Std Book';
+font-size: .75rem;
+line-height: 1.5;
+text-align: center;
+font-weight: 500;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.c-button--primary {
+    background-color: #fe2d5b;
+    border-radius: .125rem;
+    color: #fff;
+}
+.c-button--secondary {
+    padding: 18px 30px;
+    min-height: 52px;
+    background-color: transparent;
+    border-radius: .125rem;
+    border: 1px solid #000000;
+    margin-left: 20px;
+    max-width: 191px;
+    color: #424242;
+    z-index: 0;
+    overflow: hidden;
+    transition: color .3s ease-out;
+}
 
 
-
+a:active, a:hover {
+    outline-width: 0;
+}
 /*992px*/
 @media(min-width:62rem) {
     .nav-link{
