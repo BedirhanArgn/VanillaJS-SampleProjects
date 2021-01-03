@@ -28,7 +28,7 @@
                         <a href="#" class="nav-link">CONTACT</a>
                     </nav>
                 </div>
-                <button class="l-header__hamburger-btn c-hamburger-button u-hidden@md-up" type="button" aria-label="Menu" aria-controls="navigation" id="hamburger-button">
+                <button class="l-header__hamburger-btn c-hamburger-button u-hidden@md-up" style="display:none;"type="button" aria-label="Menu" aria-controls="navigation" id="hamburger-button">
                     <div class="c-hamburger l-header__hamburger js-hamburger">
                         <span class="c-hamburger__box"><span class="c-hamburger__inner"></span></span>
                     </div>
@@ -38,20 +38,16 @@
     </header>
     
     <div class="container c-jumbotron">
-        <div class="container c-jumbotron__container c-jumbotron__container--bg1">
+        <div class="container c-jumbotron__container">
             <div class="row">
-                <div class="col col-7 col-9">
+                <div class="col col-7">
                 <div class="jumbotron-title">
                     <h1>Top class outsource <span class="u-block u-color-primary">design &amp; development</span></h1>
-                    <p class="u-gap-bottom-medium">We are a team of great minds with high spirits; building products that amaze users for more than eleven years. When it comes to building a marvelous product for you, we have a lot to offer.</p>                    <div class="buttons">
-                        <div class="row--xsmall-gutter@xs-down u-gap-bottom">
-                            <div class="col col--xs col--md-4">
-                                <a class="c-button c-button--primary c-jumbotron__button u-full-width" href="about-us" title="About Us">About Us</a>
-                                <a class="c-button c-button--secondary c-jumbotron__button u-full-width" href="contact" title="Get in Touch">Get in Touch</a>
+                    <p>We are a team of great minds with high spirits; building products that amaze users for more than eleven years. When it comes to building a marvelous product for you, we have a lot to offer.</p>                    <div class="buttons">
+                            <div class="col">
+                                <a class="c-button c-button--primary" href="about-us" title="About Us">About Us</a>
+                                <a class="c-button c-button--secondary" href="contact" title="Get in Touch">Get in Touch</a>
                             </div>
-                            <div class="col col--xs col--md-4">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -59,8 +55,109 @@
         </div>
     </div>
     <hr class="hr-line">
-    <section class="container"></section>
-    <h2 class="secondary-title">SERVICES</h2>
+    <section class="container u-pad-ends">
+        <h2 class="secondary-title">SERVICES</h2>
+        <div class="section-row">
+            <div class="section-col">
+                <h3>Expertise in<span>backend development</span></h3>
+                <div class="content">
+                <p class="section-content">We can provide language-agnostic development, SOLID development, test-driven development, RESTFul API, scalable architecture, third-party integrations. Our passion is creating solid yet scalable solutions such as Cloud/Backend Architecture, API design and DevOps.</p>
+                </div>
+                <h5>WE USE</h5>
+                <div class="section-tech">
+                    <ul class="tech-list">
+                        <li class="li-item"><span class="u-color-tundora">PHP</span></li>
+                        <li class="li-item"><span class="u-color-tundora">NodeJS</span></li>
+                        <li class="li-item"><span class="u-color-tundora">Go</span></li>
+                        <li class="li-item"><span class="u-color-tundora">Symfony</span></li>
+                        <li class="li-item"><span class="u-color-tundora">MySQL</span></li>
+                        <li class="li-item"><span class="u-color-tundora">RabbitMQ</span></li>
+                        <li class="li-item"><span class="u-color-tundora">MongoDB</span></li>
+                        <li class="li-item"><span class="u-color-tundora">Redis</span></li>
+                        <li class="li-item"><span class="u-color-tundora">Elasticsearch</span></li>
+                        <li class="li-item"><span class="u-color-tundora">Docker</span></li>
+                        <li class="li-item"><span class="u-color-tundora">AWS</span></li>
+                        <li class="li-item"><span class="u-color-tundora">Neo4J</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-col">
+                <h3>Hand-crafted <span>frontend development</span></h3>
+                <div class="content">
+                <p class="section-content">We can provide responsive layout, component based development, PWAs with modern JS frameworks, living style-guides, maintainable and scalable CSS, universal application development.</p>
+                </div>
+                <h5>WE USE</h5>
+                <div class="section-tech">
+                    <ul class="tech-list">
+                        <li class="li-item"><span>React</span></li>
+                        <li class="li-item"><span>Angular</span></li>
+                        <li class="li-item"><span>Vue</span></li>
+                        <li class="li-item"><span>Sass</span></li>
+                        <li class="li-item"><span>Webpack</span></li>
+                        <li class="li-item"><span>Gulp</span></li>
+                        <li class="li-item"><span>Git</span></li>
+                        <li class="li-item"><span>Linters</span></li>
+                        <li class="li-item"><span>Formatters</span></li>
+                        <li class="li-item"><span>Yarn</span></li>
+                        <li class="li-item"><span>Storybook</span></li>
+                        <li class="li-item"><span>Jest</span></li>
+                    </ul>
+                </div>
+            </div>
+         
+        </div>
+<div class="section-row">
+    <div class="section-col">
+        <h3>We provide<span>mobile development</span></h3>
+        <div class="content">
+        <p class="section-content">We can provide intuitive flows and not only nice-looking interfaces but also usable and performant applications for all screen sizes with maintainable and scalable codebase for both iOS and Android platforms.</p>
+        </div>
+        <h5>WE USE</h5>
+        <div class="section-tech">
+            <ul class="tech-list">
+                <li class="li-item"><span>React Native</span></li>
+                <li class="li-item"><span>TypeScript</span></li>
+                <li class="li-item"><span>Flow</span></li>
+                <li class="li-item"><span>Prettier</span></li>
+                <li class="li-item"><span>Jest</span></li>
+                <li class="li-item"><span>Detox</span></li>
+                <li class="li-item"><span>GraphQL</span></li>
+                <li class="li-item"><span>Fastlane</span></li>
+                <li class="li-item"><span>OneSignal</span></li>
+                <li class="li-item"><span>FireBase</span></li>
+                <li class="li-item"><span>MixPanel</span></li>
+                <li class="li-item"><span>Crashlytics</span></li>
+            </ul>
+        </div>
+  
+    </div>  
+    <div class="section-col">
+        <h3>Top notch <span>UI/UX design</span></h3>
+        <div class="content">
+        <p class="section-content">We are passionate about creating efficient human-computer interactions via universal design principles and usage of best practices.</p>
+        </div>
+        <h5>WE USE</h5>
+        <div class="section-tech">
+            <ul class="tech-list list-last">
+                <li class="li-item"><span>User Experience</span></li>
+                <li class="li-item"><span>User Interface Design</span></li>
+                <li class="li-item"><span>Interaction Design</span></li>
+                <li class="li-item"><span>Responsive Design</span></li>
+                <li class="li-item"><span>Wireframing</span></li>
+                <li class="li-item"><span>Prototyping</span></li>
+            </ul>
+        </div>
 
+  
+  
+  
+    </div>
+
+
+</div>
+
+
+    </section>
+<script src="/script.js"></script>
 </body>
 </html>
