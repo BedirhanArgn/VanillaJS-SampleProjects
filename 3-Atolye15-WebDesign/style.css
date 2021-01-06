@@ -325,7 +325,19 @@ a:hover {
 
 .row-footer {
     display: flex;
-    justify-items: space-between;
+    justify-items: space-around;
+}
+
+.coll-f:first-child {
+    min-width: 500px;
+}
+
+.coll-f h6 {
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: .8125rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .coll-f {
@@ -346,8 +358,16 @@ a:hover {
     color: #717a85;
 }
 
+.list-unstyled a:hover {
+    color: #fe2d5b;
+}
+
 .u-gap-bottom {
     margin-top: 1.75rem;
+}
+
+.hamburger {
+    display: none !important;
 }
 
 @media (max-width: 61.9375rem) {
@@ -421,6 +441,19 @@ a:hover {
         grid-gap: 10px;
         padding-right: 4rem;
         margin-bottom: 3rem;
+    }
+    .row-footer {
+        display: block;
+    }
+    .l-header_content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: inline-block !important;
+    }
+    .navigation-container {
+        display: none;
     }
 }
 
